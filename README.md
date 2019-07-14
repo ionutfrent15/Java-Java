@@ -1,2 +1,2 @@
 # Java-Java
-# Simple client-server app for a warehouse of products
+"Simple client-server app for a warehouse of products"
