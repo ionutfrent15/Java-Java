@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.Stoc" table="Stoc">
+        <!--<composite-id>-->
+            <!--<key-many-to-one name="produs" column="idProdus" class="model.Produs">-->
+            <!--</key-many-to-one>-->
+            <!--<key-property name="cantitate" column="cantitate" type="integer"/>-->
+        <!--</composite-id>-->
+
+        <id name="id" column="idStoc" type="integer">
+            <generator class="increment"/>
+        </id>
+
+        <many-to-one name="produs" cascade="all" column="idProdus" class="model.Produs" not-null="true">
+        </many-to-one>
+
+        <property name="cantitate" type="integer">
+            <column name="cantitate"/>
+        </property>
+
+    </class>
+</hibernate-mapping>

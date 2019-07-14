@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.Produs"
+           table="Produs">
+        <id name="id" column="idProdus" type = "integer">
+            <generator class="increment"/>
+        </id>
+
+        <property name="denumire" type = "string">
+            <column name="denumire"/>
+        </property>
+
+        <property name="descriere" type="string">
+            <column name="descriere"/>
+        </property>
+
+        <property name="pret" type="double">
+            <column name="pret"/>
+        </property>
+    </class>
+</hibernate-mapping>

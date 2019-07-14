@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'ProiectISS'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'http://repository.ops4j.org/maven2/'
+    }
+}
+
+dependencies {
+    compile project(':Model')
+    compile group: 'org.xerial', name: 'sqlite-jdbc', version: '3.16.1'
+    compile 'org.hibernate:hibernate-core:5.2.10.Final'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.2.6'
+    compile group: 'com.sun.xml.bind', name: 'jaxb-impl', version: '2.1.13'
+    compile group: 'javax.activation', name: 'activation', version: '1.1'
+    compile 'org.springframework:spring-context:5.0.4.RELEASE'
+}
+

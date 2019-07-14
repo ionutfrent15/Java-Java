@@ -1,0 +1,5 @@
+rootProject.name = 'ProiectISS'
+include 'Server'
+include 'Model'
+include 'Client'
+

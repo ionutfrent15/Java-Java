@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Client" removed="false">
+          <file>file://$MODULE_DIR$/../../../Client/src/main/resources/spring-client.xml</file>
+          <file>file://$MODULE_DIR$/../../../Server/src/main/resources/spring-server.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+</module>
